@@ -73,3 +73,11 @@ This project uses `Stack` for consistent environment setup and build management.
 *   **Haskell Programming from First Principles:** A comprehensive resource for deeper understanding - [http://haskellbook.com/](http://haskellbook.com/)
 *   **GHCup:** The recommended Haskell installer - [https://www.haskell.org/ghcup/](https://www.haskell.org/ghcup/)
 *   **Stack:** The build tool used in this project - [https://docs.haskellstack.org/en/stable/README/](https://docs.haskellstack.org/en/stable/README/)
+
+## 📚 Documentation
+
+All project documentation is published to Google Drive and cross-linked with this repository.
+
+*   **Drive Folder:** [Foundational Haskell Learning Module — R&D Lab](https://drive.google.com/drive/folders/1SOWaVTbvIcHdS1ILDT9ARYTF7p3_47Tl)
+*   **Documentation Bundle:** [Foundational Haskell Learning Module - Documentation Bundle](https://docs.google.com/document/d/1UgW9wcUHdKxeqwtqHW0JTPyPehZcSaGKJ-gUUmPvgUA/edit?usp=drivesdk)
+*   **Learning Roadmap:** [Foundational Haskell Learning Module - Learning Roadmap](https://docs.google.com/document/d/1hxWrTo1jAq8zq-4XK8B0tkXdjWNfLEagJGIYrNO85F4/edit?usp=drivesdk)
