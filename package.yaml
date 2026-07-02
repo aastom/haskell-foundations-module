@@ -1,0 +1,101 @@
+name:                haskell-foundations-module
+version:             0.1.0.0
+github:              "aastom/haskell-foundations-module"
+license:             MIT
+author:              "aastom"
+maintainer:          "you@example.com"
+copyright:           "2024 aastom"
+
+extra-source-files:
+- README.md
+- LICENSE
+- docs/*.md
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file. If you do this, you can
+# remove the entire "description:" field below.
+description:         Please see the README on GitHub at <https://github.com/aastom/haskell-foundations-module#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+
+
+library:
+  source-dirs: src
+
+# Define all the executables that correspond to the Haskell files in the src/ directory.
+# Each file will be compiled into its own executable.
+executables:
+  01_HelloWorld:
+    main:                Phase1_Foundations/01_HelloWorld.hs
+    source-dirs:         src
+    ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+
+  02_BasicFunctions:
+    main:                Phase1_Foundations/02_BasicFunctions.hs
+    source-dirs:         src
+    ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+
+  03_LetWhere:
+    main:                Phase1_Foundations/03_LetWhere.hs
+    source-dirs:         src
+    ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+
+  01_TypeSignatures:
+    main:                Phase2_TypesAndErrors/01_TypeSignatures.hs
+    source-dirs:         src
+    ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+
+  02_CommonTypes:
+    main:                Phase2_TypesAndErrors/02_CommonTypes.hs
+    source-dirs:         src
+    ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+
+  03_CustomTypes:
+    main:                Phase2_TypesAndErrors/03_CustomTypes.hs
+    source-dirs:         src
+    ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+
+  04_TypeErrorsExplained:
+    main:                Phase2_TypesAndErrors/04_TypeErrorsExplained.hs
+    source-dirs:         src
+    ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+
+  01_Recursion:
+    main:                Phase3_PatternsAndHOF/01_Recursion.hs
+    source-dirs:         src
+    ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+
+  02_PatternMatching:
+    main:                Phase3_PatternsAndHOF/02_PatternMatching.hs
+    source-dirs:         src
+    ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+
+  03_HigherOrderFunctions:
+    main:                Phase3_PatternsAndHOF/03_HigherOrderFunctions.hs
+    source-dirs:         src
+    ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+
+  04_FunctionComposition:
+    main:                Phase3_PatternsAndHOF/04_FunctionComposition.hs
+    source-dirs:         src
+    ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+
+  01_LazyEvaluation:
+    main:                Phase4_LazinessAndIO/01_LazyEvaluation.hs
+    source-dirs:         src
+    ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+
+  02_BasicIO:
+    main:                Phase4_LazinessAndIO/02_BasicIO.hs
+    source-dirs:         src
+    ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+
+tests:
+  Spec:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+    dependencies:
+    - haskell-foundations-module
