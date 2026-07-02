@@ -1,0 +1,32 @@
+# Caching
+.stack-work/
+.stack-dist/
+.ghc.environment.*
+
+# Terminals
+*.o
+*.hi
+*.dyn_o
+*.dyn_hi
+*.hie
+
+# Executables
+*Executable
+
+# IDE files
+.hsproj
+.hs-boot
+.vscode/
+
+# Docs
+doc/
+
+# Logs
+*.log
+
+# macOS specific
+.DS_Store
+
+# Editor specific
+*~
+.#*
